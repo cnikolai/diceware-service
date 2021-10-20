@@ -18,7 +18,7 @@ public class PassphraseController {
   private final PassphraseGenerator generator;
 
   @Autowired //looking for PassphraseGenerator to inject into constructor
-  public PassphraseController(
+  public PassphraseController(//Spring at runtime looks at these dependencies and creates instances to satisfy the dependencies
       PassphraseGenerator generator) {
     this.generator = generator;
   }
