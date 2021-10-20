@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Beans {
 
-  @Value("${bundle.name}") //$ = go to whatever expression is in {} (word-list properties); grabs this from application.properties
+  @Value("${bundle.name}") //$ = go to whatever expression is in {} (word-list properties); grabs this from application.yml
   private String bundleName;
 
   @Bean
